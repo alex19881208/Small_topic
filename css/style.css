@@ -1,0 +1,251 @@
+
+
+/* 頁首 */
+header {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* z-index: 999;   */
+  /* 確保頁首在最上層 */
+}
+
+#no_1 {
+    padding-top: 60px; /* 假設固定頁首的高度為 50px */
+} 
+
+
+/* 動態圖 */
+.carousel-item>img{
+  width: 100%;
+  height: 800px;
+  object-fit: cover;
+}
+
+
+/* 中段背景圖片 */
+.background-container {
+  margin-top: 20px; /* 調整上方間距為 20 像素 */
+  width: 100%; /* 設置容器寬度 */
+  height: 100vh; /* 設置容器高度，這裡使用 viewport height (vh) 來讓容器填滿整個螢幕高度 */
+  background-image: url('../img/penghu_great_bridge_2.png'); /* 設置背景圖片路徑 */
+  background-size: cover; /* 確保圖片完全覆蓋容器 */
+  background-position: center; /* 將圖片置中 */
+  background-repeat: no-repeat; /* 防止圖片重複 */
+  display: flex; /* 使用 Flexbox 來水平垂直置中內容 */
+  justify-content: center; /* 水平置中 */
+  align-items: center; /* 垂直置中 */
+  text-align: center; /* 將文字置中 */
+  color: #fff; /* 文字顏色 */
+}
+/* ========================================================= */
+.bg-image{
+  background-image: url('../img/penghu_great_bridge.png');
+  background-attachment: fixed;
+  background-position: center;
+  line-height: 600px;
+  color: white;
+  font-size: 40px;
+  text-align: center;
+}
+
+.bg-pate{
+  background-image: url('../img/jibei_lsland_4.png');
+  background-attachment: fixed;
+  background-position: center;
+  line-height: 600px;
+  color: white;
+  font-size: 40px;
+  text-align: center;
+}
+
+.bg-baby{
+  background-image: url('../img/chixi_one_heart_stone_weir.png');
+  background-attachment: fixed;
+  background-position: center;
+  line-height: 600px;
+  color: white;
+  font-size: 40px;
+  text-align: center;
+}
+/* =========================================================== */
+
+.apple {
+  padding: 20px; /* 內容區塊的內邊距 */
+  background-color: rgba(0, 0, 0, 0.5); /* 背景顏色與透明度 */
+}
+
+.custom-font {
+  font-family: 'Arial', sans-serif; /* 設置字體為 Arial，如果找不到則使用 sans-serif 作為後備字體 */
+}
+
+.bold-text {
+  font-weight: bold; /* 設置文字為粗體 */
+}
+/* iframe{
+  vertical-align: top;
+} */
+
+/* =================================================================== */
+/*                             響應式頁首                              */
+/* ==================================================================*/
+
+/* 為頂部導航添加黑色背景色 */
+.topnav {
+    
+    overflow: hidden;
+}
+  
+  /* 設定導覽列中連結的樣式 */
+.topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 30px;
+}
+  
+  /* 更改懸停時連結的顏色 */
+.topnav a:hover {
+    background-color: rgb(255, 255, 255,0.3);
+    color: turquoise;
+}
+  
+  /* 新增一個活動類別來突出顯示目前頁面 */
+.topnav a.active {
+    background-color: turquoise;
+    color: white;
+}
+  
+  /* 隱藏應在小屏幕上打開和關閉頂部導航的鏈接 */
+.topnav .icon {
+    display: none;
+}
+
+/* 當螢幕寬度小於 600 像素時，隱藏除第一個連結（「首頁」）之外的所有連結。顯示包含應開啟和關閉頂部導航 (.icon) 的鏈接 */
+@media screen and (max-width: 700px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  /* 當使用者點擊圖示時，「響應式」類別將使用 JavaScript 新增到頂部導航。這個類別使頂部導航在小螢幕上看起來很好（垂直而不是水平顯示連結） */
+  @media screen and (max-width: 700px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+
+
+/* ========================================================== */
+/*                           右側邊紐                             */
+/* ========================================================== */
+
+#pagetop{
+  position: fixed;            /*固定定位*/
+  right: 20px;                /*右邊界*/
+  bottom: 20px;               /*下邊界*/
+  display: block;             /*顯示為塊及元素*/
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 80px;                /*寬度*/
+  height: 80px;               /*高度*/
+  line-height: 80px;          /*行高*/
+  text-align: center;         /*文字置中*/
+  color: white; 
+  text-decoration: none;      /*移除底線*/
+  border-radius: 40%;         /*圓角*/
+}
+
+
+  /* ======================================================================== */
+  /*                               點擊照片放大縮小                            */
+  /* ======================================================================== */
+  #overlay1, #overlay2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* 半透明黑色背景 */
+    display: none; /* 預設隱藏 */
+}
+
+#zoomedImage1, #zoomedImage2 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    display: none; /* 預設隱藏 */
+}
+
+
+/* =======================放大縮小共用============================ */
+.hidden {
+    display: none;
+}
+
+
+
+#photoContainer img {
+    max-width: 100%; /* 照片最大宽度 */
+    height: auto;
+}
+/* =======================放大縮小共用============================ */
+  /* =========================================================== */
+  /*                          最新消息圖片效果                    */
+  /* =========================================================== */
+
+.img-hover {
+    transition: transform 0.2s ease; /* 添加过渡效果 */
+}
+
+.img-hover:hover {
+    transform: translateY(-5px) scale(1.1); /* 悬停时向上提起并放大 1.1 倍 */
+}
+
+/* ==================================================================== */
+/*                        消除底線及變更文字粗細                          */
+/* ==================================================================== */
+
+/* 消除超链接的下划线，并设置文字颜色和粗细 */
+a {
+  text-decoration: none; /* 消除下划线 */
+  color: cornflowerblue; /* 设置文字颜色 */
+  font-weight: bolder; /* 设置文字粗细 */
+}
+
+
+
+/* ================================================================== */
+/*                                與我聯絡                              */
+/* ================================================================== */
+
+.backy{
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 0%, rgba(12,9,121,1) 100%);
+  padding: 20px;
+}
+
+label{
+  color: black;
+  font-size: 22px;
+}
+
+

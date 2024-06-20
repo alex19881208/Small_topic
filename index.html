@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/cssreset.css">
+    <!-- bootstrap5_cdn運用start -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- bootstrap5_cdn運用end -->
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <!-- 自創CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>遠離塵囂的城市</title>
+    <!-- 字體Start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@600&display=swap" rel="stylesheet">
+    <!-- 字體end -->
+    <!-- 圖案 -->
+    <script src="https://kit.fontawesome.com/2a26e51f01.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- ======================頁首========================== -->
+    <header class="fixed-top">
+        <div class="topnav d-flex justify-content-between" id="myTopnav">
+            <div>
+                <a href="homepage.html" class="active">主頁</a>
+                    <a href="#no_1">最新消息</a>
+                    <a href="#no_2">精選景點</a>
+                    <a href="#no_3">特色美食</a>
+                    <a href="#no_4">關於澎湖</a>
+                    <a href="#no_5">旅遊諮詢</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        </div>
+    </header>
+    <!-- =====================動態圖======================== -->
+    <div class="content" style="padding-top: 0px;">
+        <div id="demo" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+                <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+                <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active"><img src="./img/whale_cave.png"></div>
+                <div class="carousel-item"><img src="./img/siaochiliao_hyperbolic_bridge.png"></div>
+                <div class="carousel-item"><img src="/img/chixi_one_heart_stone_weir.png"></div>
+            </div>
+              <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- ====================最新消息======================= -->
+    <div>
+        <p id="no_1"></p>
+        <h1 class="text-decoration-underline" style="text-align: center;" ><u>最新消息</u></h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 d-flex ">
+                    <a href="https://www.penghu.gov.tw/tourism/home.jsp?id=61&act=view&dataserno=11303150016&mserno=201001010085">
+                        <img src="./img/表演徵選.jpg" class="img-fluid img-hover" alt="2024澎湖海上花火節舞台秀徵選edm">
+                        <h4 style="text-align: center;">2024澎湖海上花火節舞台秀徵選edm</h4>
+                    </a>
+                </div>
+                <div class="col-md-4 d-flex ">
+                    <a href="https://www.penghu.gov.tw/tourism/home.jsp?id=61&act=view&dataserno=11303150016&mserno=201001010085">
+                        <img src="./img/航海王.jpg" class="img-fluid img-hover" alt="2024澎湖海上花火節即將開始">
+                        <h4 style="text-align: center;">2024澎湖海上花火節即將開始</h4>
+                    </a>
+                </div>
+                <div class="col-md-4 d-flex ">
+                    <a href="https://www.penghu.gov.tw/tourism/home.jsp?id=61&act=view&dataserno=11303110014&mserno=201001010085">
+                        <img src="./img/員貝樂營.jpg" class="img-fluid img-hover" alt="2024員貝樂營">
+                        <h4 style="text-align: center;">2024員貝樂營</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ====================影片專區 start==================== -->
+    <div style="padding-top: 50px;">
+        <h1 class="text-decoration-underline" style="text-align: center;" ><u>影片專區</u></h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 d-flex align-items-center justify-content-center">
+                    <div style="height: 315px;">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/U8BchyHsqtE?si=AVU19cQtz82FoLnG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex align-items-center justify-content-center">
+                    <div style="height: 315px;">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/eLgq458sRKE?si=BWvu10aqWLqR7z4Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- =====================影片專區 end===================== -->
+
+    <!-- =====================中間背景圖start======================= -->
+    <!-- <div class="container-fluid background-container">
+        <div class="content">
+            <h1 class="custom-font bold-text">心動了嗎?</h1>
+            <h2 class="custom-font bold-text">準備來趟旅遊吧!</h2>
+        </div>
+    </div> -->
+    <div class="bg-image">準備來趟旅遊吧!</div>
+    <!-- =====================中間背景圖end======================= -->
+
+
+    <!-- =============================精選景點================================ -->
+    <div>
+        <p id="no_2"></p>
+        <h1 class="text-decoration-underline" style="text-align: center; padding-top: 80px;" >精選景點</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4"><img src="./img/wind_turbines_2.png" class="img-thumbnail img-clickable1 img-hover" data-img="./img/wind_turbines.png"><h5 style="text-align: center;">白沙鄉-中屯風車</h5></div>
+                <div class="col-md-4"><img src="./img/whale_cave_2.png" class="img-thumbnail img-clickable1 img-hover" data-img="./img/whale_cave.png"><h5 style="text-align: center;">西嶼鄉-鯨魚洞</h5></div>
+                <div class="col-md-4"><img src="./img/three_stone_walls_2.png" class="img-thumbnail img-clickable1 img-hover" data-img="./img/three_stone_walls.png"><h5 style="text-align: center;">西嶼鄉-三石壁</h5></div>               
+            </div>
+            <div class="row">
+                <div class="col-md-4"><img src="./img/stone_weir_clusters_jibei_lsland_2.png" class="img-thumbnail img-clickable1 img-hover" data-img="./img/stone_weir_clusters_jibei_lsland.png"><h5 style="text-align: center;">白沙鄉-吉貝石滬</h5></div>
+                <div class="col-md-4"><img src="./img/siaochiliao_hyperbolic_bridge_3.png" class="img-thumbnail img-clickable1 img-hover" data-img="./img/siaochiliao_hyperbolic_bridge.png"><h5 style="text-align: center;">西嶼鄉-小池角雙曲橋</h5></div>
+                <div class="col-md-4"><img src="./img/penghu_great_bridge_2.png" class="img-thumbnail img-clickable1 img-hover" data-img="./img/penghu_great_bridge.png"><h5 style="text-align: center;">白沙鄉-跨海大橋</h5></div>    
+            </div>
+            <div class="row">
+                <div class="col-md-4"><img src="./img/chixi_rock_waterfall_2.png" class="img-thumbnail img-clickable1 img-hover" data-img="./img/chixi_one_heart_stone_weir.png"><h5 style="text-align: center;">西嶼鄉-池西岩瀑</h5></div>
+                <div class="col-md-4"><img src="./img/chixi_one_heart_stone_weir_2.png" class="img-thumbnail img-clickable1 img-hover" data-img="./img/chixi_one_heart_stone_weir.png"><h5 style="text-align: center;">西嶼鄉-池西虎目滬</h5></div>
+                <div class="col-md-4"><img src="./img/daguoye_columnar_basalt_2.png" class="img-thumbnail img-clickable1 img-hover" data-img="./img/daguoye_columnar_basalt.png"><h5 style="text-align: center;">西嶼鄉-大菓葉玄武岩</h5></div>     
+            </div>
+            <div class="row">
+                <div class="col-md-4"><img src="./img/the_siyu_wesrern_fort_2.png" class="img-thumbnail img-clickable1 img-hover" data-img="./img/the_siyu_wesrern_fort.png"><h5 style="text-align: center;">西嶼鄉-西台古堡</h5></div>
+                <div class="col-md-4"><img src="./img/lighthouse.png" class="img-thumbnail img-clickable1 img-hover" data-img="./img/mudouuyu_lighthouse.png"><h5 style="text-align: center;">白沙鄉-目斗嶼燈塔</h5></div>
+                <div class="col-md-4"><img src="./img/jibei_lsland_3.png" class="img-thumbnail img-clickable1 img-hover" data-img="./img/jibei_lsland.png"><h5 style="text-align: center;">白沙鄉-吉貝嶼</h5></div>
+            </div>
+
+      <!-- ============放大功能============ -->
+            <!-- 背景遮罩元素 -->
+            <div id="overlay1"></div>
+            <!-- 放大的圖片和文字描述 -->
+            <div id="zoomedImage1" class="hidden">
+                <img src="" class="img-fluid" id="zoomedImg1">
+                <div id="imageCaption1"></div>
+            </div>1
+        </div>
+    </div>
+
+
+    <div class="bg-pate">旅程就從今天開始!</div>
+    <!-- ===================================特色美食========================================== -->
+    <div>
+        <p id="no_3"></p>
+            <h1 class="text-decoration-underline" style="text-align: center; padding-top: 70px;" >特色美食</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4"><img src="./img/三哥香雞排.jpg" class="img-thumbnail img-clickable2 img-hover" data-img="./img/三哥香雞排.jpg"><h5 style="text-align: center;">馬公市-三哥香雞排</h5></div>
+                <div class="col-md-4"><img src="./img/鐘記燒餅.jpg" class="img-thumbnail img-clickable2 img-hover" data-img="./img/鐘記燒餅_2.jpg"><h5 style="text-align: center;">馬公市-鐘記燒餅</h5></div>
+                <div class="col-md-4"><img src="./img/玉冠嫩仙草.jpg" class="img-thumbnail img-clickable2 img-hover" data-img="./img/玉冠嫩仙草_2.jpg"><h5 style="text-align: center;">馬公市-玉冠嫩仙草</h5></div>               
+            </div>
+            <div class="row">
+                <div class="col-md-4"><img src="./img/易家仙人掌冰.jpg" class="img-thumbnail img-clickable2 img-hover" data-img="./img/易家仙人掌冰_2.jpg"><h5 style="text-align: center;">白沙鄉-易家仙人掌冰</h5></div>
+                <div class="col-md-4"><img src="./img/傻愛莊.jpg" class="img-thumbnail img-clickable2 img-hover" data-img="./img/傻愛莊_2.jpg"><h5 style="text-align: center;">馬公市-傻愛莊</h5></div>
+                <div class="col-md-4"><img src="./img/原味漁村小吃.jpg" class="img-thumbnail img-clickable2 img-hover" data-img="./img/原味漁村小吃_2.jpg"><h5 style="text-align: center;">馬公市-原味漁村小吃</h5></div>    
+            </div>
+            <div class="row">
+                <div class="col-md-4"><img src="./img/馬路益燒肉.jpg" class="img-thumbnail img-clickable2 img-hover" data-img="./img/馬路益燒肉_2.jpg"><h5 style="text-align: center;">馬公市-馬路益燒肉</h5></div>
+                <div class="col-md-4"><img src="./img/阿虹的店.jpg" class="img-thumbnail img-clickable2 img-hover" data-img="./img/阿虹的店_2.jpg"><h5 style="text-align: center;">西嶼鄉-阿虹的店</h5></div>
+                <div class="col-md-4"><img src="./img/郵局口蔥油餅.jpg" class="img-thumbnail img-clickable2 img-hover" data-img="./img/郵局口蔥油餅_2.jpg"><h5 style="text-align: center;">馬公市-郵局口蔥油餅</h5></div>     
+            </div>
+            <!-- ============放大功能============ -->
+                <!-- 背景遮罩元素 -->
+            <div id="overlay2"></div>
+                <!-- 放大的圖片和文字描述 -->
+            <div id="zoomedImage2" class="hidden">
+                <img src="" class="img-fluid" id="zoomedImg2">
+                <div id="imageCaption2"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="bg-baby">澎湖，歡迎你~</div>
+<!-- =============================================================== -->
+<!--                            關於澎湖                              -->
+<!-- =============================================================== -->
+   
+    <div class="container">
+        <p id="no_4"></p>
+        <h1 class="fw-bold" style="text-align: center; padding-top: 80px;" ><u>關於澎湖</u></h1>
+        <div class="row align-items-center">
+            <div class="col-md-12">
+                <p class="lh-lg fs-5" style="text-align: start;">澎湖地處海隅，群島羅列，考古學者從出土文物鑑定發現，澎湖在四、五千年前便有人類活動的遺跡；歷史文物考證則約在北宋以前，中國東南沿海前來澎湖的漢人，只把澎湖當作一個暫時的漁業基地；南宋以後有漢人在澎湖聚居；元世祖至元18年(1281)，正式在澎湖設置巡檢司治理澎湖、明朝末年則因躲避戰亂兵禍，中國東南沿海以捕魚、採貝、畜牧和耕種的漢人才大量遷徙到澎湖。</p>
+            </div>
+            <div class="col-md-6">
+                <figure class="figure">
+                    <img src="./img/20140814172327333.jpg" class="figure-img img-fluid rounded" alt="">
+                    <figcaption class="figure-caption text-center">澎湖天后宮</figcaption>
+                </figure>
+            </div>
+            <div class="col-md-6">
+                <figure class="figure">
+                    <img src="./img/天后宮鑿花(吊桶).jpg" class="figure-img img-fluid rounded" alt="">
+                    <figcaption class="figure-caption text-center">天后宮鑿花(吊桶)</figcaption>
+                </figure>
+            </div>
+            <div class="col-md-12">
+                <p class="lh-lg fs-5" style="text-align: start;">澎湖的歷史源遠流長，四、五千年前即有史前人類活動的聚落和遺址，散佈全縣各島嶼。從草萊初闢到歷史時期，汪洋大海中的澎湖群島，向來就不寂寞；降至近代，更以其扼控台海的優越地理位置，成為世界列強覬覦的焦點，兵船商舶，輻輳而來，也掀起了澎湖與西方相遇的序幕。凡走過的必留下痕跡，往昔的點點滴滴已積累、演變成為今日澎湖寶貴的文化資產，值得大家來呵護和珍惜。</p>
+            </div>
+            <div class="col-md-6 d-flex flex-column align-items-center figure">
+                <img src="./img/沈有容諭退紅毛番韋麻郎等石碑.jpg" class=" img-fluid" style="width: 75%;" alt="">
+                <figcaption class="figure-caption text-center">沈有容諭退紅毛番韋麻郎等石碑</figcaption>
+            </div>
+            <div class="col-md-6">
+                <div class="col-md-12">
+                    <p class="lh-lg fs-5" style="text-align: start;">澎湖地區從元代設治開發迄今七百多年，是全台最早設治和開發的區域，當時隸屬福建泉州府晉江縣。這些開發歷程，讓澎湖人文史蹟更顯得多樣與豐富，因此不論是中央老街、廟史四百餘年的澎湖天后宮和光緒城等古戰場遺跡或傳統常民文化等人文景觀，都讓澎湖這個古老容顏呈現不同風采。</p>
+                </div>
+                <div class="col-md-12 figure">
+                    <img src="./img/20140814133912908.jpg" class="text-center img-fluid" alt="">
+                    <figcaption class="figure-caption text-center">西嶼西臺</figcaption>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <p class="lh-lg fs-5" style="text-align: start;">澎湖合院建築和聚落風采衍續閩南建築風格，並秉持中國傳統中庸之道，以正間為中軸、左右前方的護龍併行對稱，再以正前方造型多變的門罩或門樓連貫成合院式的住屋單位；民屋則遵從後尊前卑的梳式配置的倫常概念鋪陳聚落型態。西嶼二崁是全台古聚落保存區所在，而文化景觀豐富的望安中社和湖西沙港古厝群也都具有代表性。</p>
+                <p class="lh-lg fs-5" style="text-align: start;">澎湖的常民文化，層層鐫刻著澎湖人的艱韌和對於大自然挑戰的不妥協。也因此天地自然的崇拜信仰，成為澎湖人的中心，可從全縣97個村里，卻有180餘座登記有案的廟宇、佛寺、教堂中窺見端倪；而全台密度最高的「石敢當」信仰、廟宇村落周邊的營頭精神防禦、宗教民俗科儀、硓𥑮石（珊瑚礁）格圍成的菜宅、壘置砌起的石滬和合院式民居聚落，則交織成澎湖豐富的文化資產。</p>
+            </div>
+            <div class="col-md-4">
+                <figure class="figure">
+                    <img src="./img/二崁傳統聚落保存區.jpg" class="figure-img img-fluid rounded" alt="">
+                    <figcaption class="figure-caption text-center">二崁傳統聚落保存區</figcaption>
+                </figure>
+            </div>
+            <div class="col-md-4">
+                <figure class="figure">
+                    <img src="./img/石敢當.jpg" class="figure-img img-fluid rounded" alt="">
+                    <figcaption class="figure-caption text-center">石敢當</figcaption>
+                </figure>
+            </div>
+            <div class="col-md-4">
+                <figure class="figure">
+                    <img src="./img/石滬.jpg" class="figure-img img-fluid rounded" alt="">
+                    <figcaption class="figure-caption text-center">石滬</figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+    <hr>
+<!-- =============================與我聯絡=============================== -->
+    <p id="no_5"></p>
+    <h1 class="text-decoration-underline" style="text-align: center;padding-top: 80px;">旅遊洽詢</h1>
+    
+    <div class="container backy">
+        <form action="">
+            
+    <!-- 第三列 -->
+            <div class="row">
+                <div class="col-sm-5">
+                    <label>請輸入姓名</label>
+                    <input type="text" placeholder="姓名" class="form-control" required>
+                </div>
+                <div class="col-sm-7">
+                    <label>Email</label>
+                    <input type="text" placeholder="Email" class="form-control" required>
+                </div>
+            </div>
+            <br>
+    <!-- 第四列 -->
+            <div class="row">
+                <div class="col-sm-4">
+                    <label>生日</label>
+                    <input type="date" placeholder="生日" class="form-control" required>
+                </div>
+                <div class="col-sm-4">
+                    <label>手機號碼</label>
+                    <input type="number" placeholder="手機號碼" class="form-control" required>
+                </div>
+                <div class="col-sm-4">
+                    <label>家用電話</label>
+                    <input type="number" placeholder="家用電話" class="form-control" required>
+                </div>
+            </div>
+            <br>
+
+    <!-- 第五列 -->
+            <div class="row">
+                <div class="col-sm-3">
+                    <label>洽詢內容</label>
+                    <select class="form-select">
+                        <option selected>請選擇</option>
+                        <option>異業合作</option>
+                        <option>行程規劃</option>
+                        <option>如何前往</option>
+                        <option>聯名商品</option>
+                        <option>團旅諮詢</option>
+                    </select>
+                </div>
+                <div class="col-sm-9">
+                    <label>性別</label>
+                    <div class="col-sm-12">
+                        <label>男性</label>
+                        <input type="radio">
+                        <label>女性</label>
+                        <input type="radio">
+                    </div>
+                </div>
+                
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="col-sm-12">
+                        <label for="message" style="text-align: start;">聯絡簡述</label>
+                    </div>
+                    <div class="col-sm-12">
+                        <textarea name="message" id="message" cols="50" rows="5" placeholder="請輸入內容"></textarea>
+                    </div>
+                    
+                    <br>
+                </div>
+            </div>
+    <!-- 第六列 -->
+            <div class="row">
+                <div class="col-sm-12">
+                    <input type="checkbox">
+                    <label>我已閱讀，並同意隱私政策</label>
+                </div>
+            </div>
+            <br>
+
+    <!-- 第七列 -->
+            <div class="row">
+                <div class="col-sm-12">
+                    <button type="submit" class="btn btn-primary" style="background-color: cornflowerblue;width: 100%;font-size: 20px;">送出</button>
+                </div>
+            </div>
+            
+        </form>
+    </div>
+    <hr>
+
+
+
+
+
+
+<!-- ========================地圖start============================= -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d468405.47932803934!2d119.19101996977443!3d23.481455979145164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346c51373ec4c45d%3A0xb8e82c8665cfb023!2z5r6O5rmW57ij!5e0!3m2!1szh-TW!2stw!4v1710746821060!5m2!1szh-TW!2stw" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<!-- ========================地圖end=============================== -->
+
+<!-- ============================頁尾start==================================== -->
+    <div >
+        <footer class="text-white text-center" style="background-color: cornflowerblue;">
+          <div class="container d-flex justify-content-center py-5">
+            <button type="button" class="btn btn-primary btn-lg btn-floating mx-2 rounded-circle " style="background-color: #54456b;">
+              <i class="fab fa-facebook-f" style="width: 20px; height: 10px;"></i>
+            </button>
+            <button type="button" class="btn btn-primary btn-lg btn-floating mx-2 rounded-circle " style="background-color: #54456b;">
+              <i class="fab fa-youtube" style="width: 20px; height: 10px;"></i>
+            </button>
+            <button type="button" class="btn btn-primary btn-lg btn-floating mx-2 rounded-circle " style="background-color: #54456b;">
+              <i class="fab fa-instagram" style="width: 20px; height: 10px;"></i>
+            </button>
+            <button type="button" class="btn btn-primary btn-lg btn-floating mx-2 rounded-circle " style="background-color: #54456b;">
+              <i class="fab fa-twitter" style="width: 20px; height: 10px;"></i>
+            </button>
+          </div>
+          <!-- Copyright -->
+          <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2024 Copyright:
+            <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+          </div>
+          <!-- Copyright -->
+        </footer>
+      </div>
+      <!-- End of .container -->
+<!-- ============================頁尾end====================================== -->
+      <!-- 右側小按鈕 -->
+    <a href="#" id="pagetop">TOP</a>
+
+    <script src="./js/script.js"></script>
+  <!-- 自創JS -->
+
+  
+</body>
+</html>
